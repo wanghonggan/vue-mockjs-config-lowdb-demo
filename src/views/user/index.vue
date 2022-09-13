@@ -45,6 +45,8 @@
 
 <script>
 import { cloneDeep } from 'lodash';
+import service  from '@/mock/service/user';
+
 export default {
   name: 'UserIndex',
   data() {
@@ -116,6 +118,7 @@ export default {
       this.loadList();
     },
     async loadList() {
+      console.log(service);
       const { data: res } = await this.$axios.get('/user/list', {
         params: {
           page: this.page,
