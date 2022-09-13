@@ -1,4 +1,4 @@
-const service = require('../lowdb/service/user');
+const service = require('./service/user');
 
 module.exports = {
   requests: [
