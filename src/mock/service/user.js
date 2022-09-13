@@ -5,8 +5,8 @@ const path = require('path');
 const mockjs = require('mockjs');
 const lowdb = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
-console.log(path.resolve(__dirname, '../../assets/lowdb/json/user.json'))
-const db = lowdb(new FileSync(path.resolve(__dirname, '../../assets/lowdb/json/user.json')));
+console.log(path.resolve(__dirname, './lowdb/json/user.json'))
+const db = lowdb(new FileSync(path.resolve(__dirname, './lowdb/json/user.json')));
 const _ = db._;
 
 db.defaults(
